@@ -1,3 +1,6 @@
+
+
+
 /* --------------------------------------- */
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
@@ -79,6 +82,11 @@ body {
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
+}
+
+.item-center{
+    width: 60%;
+    margin: auto;
 }
 
 @media(max-width: 1340px) {
@@ -414,9 +422,10 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .header__text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    
+    margin-top: 20%;
+    /* border: 1px solid white; */
+    
 }
 
 .header__text p {
@@ -431,9 +440,41 @@ body:not(.user-is-tabbing) a:focus {
         text-align: center;
     }
 
-    .header__text p {
-        transform: scale(.8);
-    }
+}
+
+body {
+  margin: 0;
+  font-size: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  border-bottom:1px solid  #ff3258;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* --------------------------------------- */
@@ -443,6 +484,16 @@ body:not(.user-is-tabbing) a:focus {
 .work__box {
     display: flex;
     align-items: center;
+}
+
+.btn-for-resume{
+    background-color: #ff3258;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+.btn-for-resume:hover{
+    background-color: white;
+    color: #ff3258;
 }
 
 @media(max-width: 900px) {
